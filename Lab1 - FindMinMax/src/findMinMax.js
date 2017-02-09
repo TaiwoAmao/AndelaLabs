@@ -4,16 +4,16 @@ function findMinMax(myArray){
 			var sorted = myArray.sort(function(x,t){
 				return x-t;
 			});
-			var result = [];
+			var finalResult = [];
 			var minimum = sorted[0];
-			var maximum = sorted[arr.length-1];
+			var maximum = sorted[myArray.length-1];
 			if(minimum === maximum) {
-				result.push(minimum);
-				return result;
+				finalResult.push(minimum);
+				return finalResult;
 			} else {
-				result.push(minimum);
-				result.push(maximum);
-				return result;
+				finalResult.push(minimum);
+				finalResult.push(maximum);
+				return finalResult;
 			}
 		} else {
 			return [];
@@ -23,4 +23,3 @@ function findMinMax(myArray){
 	}
   
 }
-// findMinMax([1,1,1,9,1,1])
